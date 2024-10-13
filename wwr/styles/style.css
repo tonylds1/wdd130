@@ -1,0 +1,129 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@300;400;700&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #176f7d;
+  --secondary-color: #0e3744;
+  --accent1-color: #f5e172;
+  --accent2-color: #e0d9c3;
+
+  --heading-font: 'LXGW WenKai TC', cursive;
+  --paragraph-font: 'LXGW WenKai TC', Helvetica, sans-serif;
+
+  --headline-color-on-white: #0e3744;
+  --headline-color-on-color: #E0D9C3;
+  --paragraph-color-on-white: #0e3744;
+  --paragraph-color-on-color: #E0D9C3;
+  --paragraph-background-color: #0e3744;
+  --nav-link-color: #E0D9C3;
+  --nav-background-color: #176f7d;
+  --nav-hover-link-color: ;
+  --nav-hover-background-color: #f5e172;
+
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main,
+section {
+    text-align: center;  
+}
+
+nav a {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.home-title {
+    color: var(--headline-color-on-white);
+}
+
+h4 {
+    color: var(--paragraph-color-on-white);
+}
+
+.book, .join {
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-color);
+}
+
+.book:hover, .join:hover {
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-white);
+}
+
+#background {
+    height: 725px;
+    background-color: var(--accent2-color);
+}
+
+.msg {
+    background-color: var(--accent1-color);
+}
+
+.msg h2 {
+    color: #8b4513;
+}
+
+.msg p {
+    color: var(--paragraph-color-on-white);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--headline-color-on-color);
+}
+
+footer a {
+    color: var(--nav-link-color);
+}
+
+footer a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+body {
+    background-color: #fcfbfb;
+}
+
+header {
+    background-color: var(--paragraph-background-color);
+}
+
+.logo, .icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+nav a,
+.book, .join,
+footer a {
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+}  
+
+footer p a:hover {
+    text-decoration: underline;
+}
