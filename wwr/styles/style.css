@@ -10,8 +10,8 @@ Fonts are separated by a & */
   --accent1-color: #f5e172;
   --accent2-color: #e0d9c3;
 
-  --heading-font: 'LXGW WenKai TC', cursive;
-  --paragraph-font: 'LXGW WenKai TC', Helvetica, sans-serif;
+  --heading-font: 'LXGW WenKai TC', Helvetica, sans-serif;
+  --paragraph-font: 'Roboto Slab', Helvetica, sans-serif;
 
   --headline-color-on-white: #0e3744;
   --headline-color-on-color: #E0D9C3;
@@ -20,7 +20,7 @@ Fonts are separated by a & */
   --paragraph-background-color: #0e3744;
   --nav-link-color: #E0D9C3;
   --nav-background-color: #176f7d;
-  --nav-hover-link-color: ;
+  --nav-hover-link-color: #E0D9C3;
   --nav-hover-background-color: #f5e172;
 
 }
@@ -41,6 +41,7 @@ section {
 
 nav a {
     color: var(--nav-link-color);
+    padding: 35px;
 }
 
 nav a:hover {
@@ -50,6 +51,9 @@ nav a:hover {
 
 .home-title {
     color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -59,6 +63,10 @@ h4 {
 .book, .join {
     background-color: var(--accent2-color);
     color: var(--paragraph-color-on-color);
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+
 }
 
 .book:hover, .join:hover {
@@ -73,19 +81,25 @@ h4 {
 
 .msg {
     background-color: var(--accent1-color);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: #8b4513;
+    font-family: var(--heading-font);
 }
 
 .msg p {
     color: var(--paragraph-color-on-white);
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: var(--secondary-color);
     color: var(--headline-color-on-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -98,6 +112,14 @@ footer a:hover {
 
 body {
     background-color: #fcfbfb;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -127,3 +149,30 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid var(--primary-color);
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+
