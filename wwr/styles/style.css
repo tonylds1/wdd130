@@ -357,6 +357,17 @@ button {
 }
 /*---------------*/
 
+    .card-header {
+        background-image: url('images/city-language-2.webp');
+        display: block;
+        width: 300px; /* Customize as needed */
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #ddd; /* Optional: Add a border for visual clarity */
+        border-radius: 8px; /* Optional: Add rounded corners */
+    }
 
 
 @media screen and (max-width: 900px) {
