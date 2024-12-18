@@ -8,7 +8,10 @@
 </head>
 <body>
     <header>
-        <div class="logo">Logo</div>
+        <div class="logo">
+            <img src="images/logo_120.png" alt="Tony Moraes">
+        </div>
+        <div class="hamburger">&#9776;</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="work.html">Work</a>
@@ -18,17 +21,19 @@
     </header>
     <main>
         <section class="hero">
-            <h1>Hi! I am Tony</h1>
-            <p>Welcome to my portfolio website, your gateway to exploring my journey, skills, 
-                and expertise as a software engineer. Whether you're an employer seeking a 
-                reliable developer, a collaborator interested in innovative projects, or a 
-                client looking for tailored solutions, this site is designed with you in mind.</p>
+            <div class="hero-content">
+                <h1>Hi! I am Tony</h1>
+                <p>Welcome to my portfolio website, your gateway to exploring my journey, skills, 
+                    and expertise as a software engineer. Whether you're an employer seeking a 
+                    reliable developer, a collaborator interested in innovative projects, or a 
+                    client looking for tailored solutions, this site is designed with you in mind.</p>
+            </div>
             <div class="hero-img">
                 <img src="images/logo.png" alt="">
             </div>
         </section>
         <section class="skills-projects">
-            <h2>Skills Vs Projects</h2>
+            <h2 class="section-title">Skills Vs Projects</h2>
             <div class="grid">
                 <a class="card" href="#">
                     <span class="card-header card- card-languages">
@@ -94,7 +99,7 @@
             <a href="#more" class="more">more...</a>
         </section>
         <section class="contact">
-            <h2>Any Question or Suggestion?</h2>
+            <h2 class="section-title">Any Question or Suggestion?</h2>
             <form>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="email">
@@ -133,6 +138,13 @@
             <p>© 2024 Tony Edson. All rights reserved.</p>
         </div>
     </footer>
-    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+      
+        hamburger.addEventListener('click', () => {
+          nav.classList.toggle('show');
+        });
+      </script>
 </body>
 </html>
